@@ -1,0 +1,219 @@
+{
+  "tasks": [
+    {
+      "name": "attachPriorRunTime",
+      "units": [
+        {
+          "input":"r",
+          "output":"Starting program",
+          "repeatUntil": null
+        }
+      ]
+    },
+    {
+      "name": "setBreakPoint",
+      "units": [
+        {
+          "input":"set breakpoint pending on",
+          "output": "",
+          "repeatUntil": null
+        },
+        {
+          "input":"b $methodNative",
+          "output":"Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"r",
+          "output":"Starting program",
+          "repeatUntil": null
+        },
+        {
+          "input": null,
+          "output":"hit Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input": "c",
+          "output":"hit Breakpoint 1",
+          "repeatUntil": "1 tests successful"
+        }
+      ]
+    },
+    {
+      "name": "showCallStack",
+      "units": [
+        {
+          "input":"set breakpoint pending on",
+          "output": "",
+          "repeatUntil": null
+        },
+        {
+          "input":"b $methodNative",
+          "output":"Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"r",
+          "output":"Starting program",
+          "repeatUntil": null
+        },
+        {
+          "input": null,
+          "output":"hit Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"backtrace",
+          "output":"#0",
+          "repeatUntil": null
+        },
+        {
+          "input": "c",
+          "output":"hit Breakpoint 1",
+          "repeatUntil": "1 tests successful"
+        }
+      ]
+    },
+    {
+      "name": "stepping",
+      "units": [
+        {
+          "input":"set breakpoint pending on",
+          "output": "",
+          "repeatUntil": null
+        },
+        {
+          "input":"b $methodNative",
+          "output":"Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"r",
+          "output":"Starting program",
+          "repeatUntil": null
+        },
+        {
+          "input": null,
+          "output":"hit Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"ni 100",
+          "output":"in $methodNative",
+          "repeatUntil": "in ?? ()"
+        },
+        {
+          "input": "c",
+          "output":"hit Breakpoint 1",
+          "repeatUntil": "exited normally]"
+        }
+      ]
+    },
+    {
+      "name": "showRegisters",
+      "units": [
+        {
+          "input":"set breakpoint pending on",
+          "output": "",
+          "repeatUntil": null
+        },
+        {
+          "input":"b $methodNative",
+          "output":"Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"r",
+          "output":"Starting program",
+          "repeatUntil": null
+        },
+        {
+          "input": null,
+          "output":"hit Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"info r",
+          "output":"rax",
+          "repeatUntil": null
+        },
+        {
+          "input": "c",
+          "output":"hit Breakpoint 1",
+          "repeatUntil": "1 tests successful"
+        }
+      ]
+    },
+    {
+      "name": "setWatchPoint",
+      "units": [
+        {
+          "input":"set breakpoint pending on",
+          "output": "",
+          "repeatUntil": null
+        },
+        {
+          "input":"b $methodNative",
+          "output":"Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"r",
+          "output":"Starting program",
+          "repeatUntil": null
+        },
+        {
+          "input": null,
+          "output":"hit Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"watch $rax",
+          "output":"Watchpoint",
+          "repeatUntil": null
+        },
+        {
+          "input":"ni",
+          "output":"in $methodNative",
+          "repeatUntil": "hit Watchpoint"
+        }
+      ]
+    },
+    {
+      "name": "setRegisterValue",
+      "units": [
+        {
+          "input":"set breakpoint pending on",
+          "output": "",
+          "repeatUntil": null
+        },
+        {
+          "input":"b $methodNative",
+          "output":"Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"r",
+          "output":"Starting program",
+          "repeatUntil": null
+        },
+        {
+          "input": null,
+          "output":"hit Breakpoint 1",
+          "repeatUntil": null
+        },
+        {
+          "input":"set $rax = 0",
+          "output":"",
+          "repeatUntil": null
+        },
+        {
+          "input":"info r",
+          "output":"rax            0x0",
+          "repeatUntil": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Use Case, Average Increase of Time, Average Increase of Time Percentage
+avro-1.11.0-SNAPSHOT-jar-with-dependencies,1.47115350515464,656529.842056768
+commafeed-jar-with-dependencies,0.2581725,111.143078892131
+commons-lang3-3.11-SNAPSHOT-jar-with-dependencies,9.76244,667808.490078457
+docker-maven-plugin-0.33-SNAPSHOT-jar-with-dependencies,0.094041818181818,99.9526478445028
+google-java-format-1.10-SNAPSHOT-jar-with-dependencies,13.8016675,25224.1069513664
+jimfs-HEAD-SNAPSHOT-jar-with-dependencies,3.70567833333333,282501.454185879
+jsoup-1.14.1-SNAPSHOT-jar-with-dependencies,1.39989642857143,55391.697138304
+jvm-profiler-1.0.0-jar-with-dependencies,1.843414,1760604.30882052
+logback-core-1.3.0-alpha6-SNAPSHOT-jar-with-dependencies,0.577119375,17425.5616980509
+pf4j-3.4.0-SNAPSHOT-jar-with-dependencies,1.52946166666667,16934.0907815941
+poi-tl-1.7.3-jar-with-dependencies,0.615835945945946,493.514909050708
+pushy-0.14.1-SNAPSHOT,1.60389583333333,215014.517238333
+scribejava-core-6.9.1-SNAPSHOT-jar-with-dependencies,1.025956,303335.360738368
+sootclasses-trunk,0.188540909090909,11874.6511857958
+tracker-server,1.037865,2041853.4591195
+truth-HEAD-SNAPSHOT-jar-with-dependencies,2.70142132673267,93664.2394133272
+webcam-capture-0.3.13-SNAPSHOT-jar-with-dependencies,2.01816666666667,34979.5150694864
+webmagic-core-0.7.3-jar-with-dependencies,7.59732,5574.37816420868

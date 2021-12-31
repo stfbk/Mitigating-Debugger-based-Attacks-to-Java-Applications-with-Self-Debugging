@@ -1,0 +1,149 @@
+{
+	"tasks": [
+	{
+		"name": "attachPriorRunTime",
+		"units": [
+		{
+			"input":null,
+			"output":"main[1]",
+			"repeatUntil": null
+		}
+		]
+	},
+	{
+		"name": "setBreakpoint",
+		"units": [
+		{
+			"input":"stop in java.lang.System.exit",
+			"output":"Set breakpoint java.lang.System.exit",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"The application exited",
+			"repeatUntil": null
+		}
+		]
+	},
+	{
+		"name": "stepping",
+		"units": [
+		{
+			"input":"stop in $junitTest",
+			"output":"Deferring breakpoint $junitTest",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": null
+		},
+		{
+			"input":"step up",
+			"output":"Step completed",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": "The application exited"
+		}
+		]
+	},
+	{
+		"name": "show call stack",
+		"units": [
+		{
+			"input":"stop in $junitTest",
+			"output":"Deferring breakpoint $junitTest",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": null
+		},
+		{
+			"input":"step up",
+			"output":"Step completed",
+			"repeatUntil": null
+		},
+		{
+			"input":"where",
+			"output":"[2]",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": "The application exited"
+		}
+		]
+	},
+	{
+		"name": "show variables",
+		"units": [
+		{
+			"input":"stop in $junitTest",
+			"output":"Deferring breakpoint $junitTest",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": null
+		},
+		{
+			"input":"step up",
+			"output":"Step completed",
+			"repeatUntil": null
+		},
+		{
+			"input":"locals",
+			"output":"Local variables:",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": "The application exited"
+		}
+		]
+	},
+	{
+		"name": "trace output",
+		"units": [
+		{
+			"input":"stop in $junitTest",
+			"output":"Deferring breakpoint $junitTest",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"Breakpoint hit",
+			"repeatUntil": null
+		},
+		{
+			"input":"exclude java.*,javax.*,sun.*,com.sun.*,jdk.*,com.*",
+			"output":"main[1]",
+			"repeatUntil": null
+		},
+		{
+			"input":"trace go method exit",
+			"output":"main[1]",
+			"repeatUntil": null
+		},
+		{
+			"input":"run",
+			"output":"org.junit.platform.console.ConsoleLauncherExecutionResult.getExitCode",
+			"repeatUntil": null
+		}
+		]
+	}
+	]
+}
