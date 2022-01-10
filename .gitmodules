@@ -1,0 +1,4 @@
+[submodule "oblive"]
+	path = oblive
+	url = https://github.com/davidepi/oblive
+	branch = master
