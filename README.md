@@ -16,7 +16,7 @@ This repository contains the following folders:
 ## License
 
 ```
-Copyright 2021, jointly held by Osaka University, Fondazione Bruno Kessler and University of Verona
+Copyright 2022, jointly held by Osaka University, Fondazione Bruno Kessler and University of Verona
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
