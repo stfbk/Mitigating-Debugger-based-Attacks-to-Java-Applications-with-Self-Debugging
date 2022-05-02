@@ -10,7 +10,7 @@ This repository contains the following folders:
 * [**oblive**](https://github.com/davidepi/oblive/tree/675bf8d918fee618632b5f7f58f178bbbb9db4e2): the anti-debugging protection for native-level debuggers in Unix-like operative systems;
 * [**Debugging Tasks**](./Debugging%20Tasks): the list of debugging tasks;
 * [**Experimentation Tool**](./Experimentation%20Tool): the experimental framework automating debugging tasks for the assessment of anti-debugging protections;
-* [**Experimental Results**](./Experimental%20Results): the experimental results obtained by running the experimental framework on the Java and native debugger protections;
+* [**Experimental Results**](./Experimental%20Results): the experimental results obtained by running the experimental framework on the Java and native debugger protections.
 
 
 ## License

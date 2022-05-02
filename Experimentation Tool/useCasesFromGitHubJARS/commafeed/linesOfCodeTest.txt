@@ -1,0 +1,11 @@
+  934 total
+  197 ./src/test/java/com/commafeed/backend/service/UserServiceTest.java
+  140 ./src/test/java/com/commafeed/backend/opml/OPMLExporterTest.java
+  112 ./src/test/java/com/commafeed/frontend/resource/UserRestTest.java
+   94 ./src/test/java/com/commafeed/backend/FixedSizeSortedSetTest.java
+   85 ./src/test/java/com/commafeed/backend/service/FeedEntryFilteringServiceTest.java
+   81 ./src/test/java/com/commafeed/backend/feed/FeedUtilsTest.java
+   73 ./src/test/java/com/commafeed/frontend/session/SessionHelperTest.java
+   64 ./src/test/java/com/commafeed/backend/feed/EstimateDirectionTest.java
+   52 ./src/test/java/com/commafeed/backend/opml/OPMLImporterTest.java
+   36 ./src/test/java/com/commafeed/frontend/auth/SecurityCheckFactoryTest.java

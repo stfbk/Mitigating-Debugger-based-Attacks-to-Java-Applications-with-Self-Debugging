@@ -1,0 +1,16 @@
+ 1315 total
+  202 ./src/test/java/com/github/sarxos/webcam/ScreenImage.java
+  190 ./src/test/java/com/github/sarxos/webcam/WebcamStaticsTest.java
+  136 ./src/test/java/com/github/sarxos/webcam/util/jh/JHFilterTest.java
+  135 ./src/test/java/com/github/sarxos/webcam/WebcamPanelTest.java
+   98 ./src/test/java/com/github/sarxos/webcam/ds/test/DummyDevice.java
+   84 ./src/test/java/com/github/sarxos/webcam/util/jh/JHFlipFilterTest.java
+   71 ./src/test/java/com/github/sarxos/webcam/WebcamTest.java
+   66 ./src/test/java/com/github/sarxos/webcam/util/jh/JHBlurFilterTest.java
+   64 ./src/test/java/com/github/sarxos/webcam/WebcamLockTest.java
+   62 ./src/test/java/com/github/sarxos/webcam/WebcamResolutionTest.java
+   44 ./src/test/java/com/github/sarxos/webcam/WebcamPanelExample.java
+   42 ./src/test/java/com/github/sarxos/webcam/ds/test/DummyDriver3.java
+   42 ./src/test/java/com/github/sarxos/webcam/ds/test/DummyDriver2.java
+   41 ./src/test/java/com/github/sarxos/webcam/ds/test/DummyDriver.java
+   38 ./src/test/java/com/github/sarxos/webcam/util/NixVideoDevUtilsTest.java

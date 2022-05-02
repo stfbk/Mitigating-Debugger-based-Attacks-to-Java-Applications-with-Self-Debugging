@@ -1,0 +1,28 @@
+ _____ _     _ _         _____         _   
+|  _  | |   | (_)       |_   _|       | |  
+| | | | |__ | |___   _____| | ___  ___| |_ 
+| | | | '_ \| | \ \ / / _ \ |/ _ \/ __| __|
+\ \_/ / |_) | | |\ V /  __/ |  __/\__ \ |_ 
+ \___/|_.__/|_|_| \_/ \___\_/\___||___/\__|
+                                           
+                                           
+usage: Experimentation Tool [-a <arg>] -b <arg> [-c <arg>] [-h <arg>] -j
+       <arg> [-n <arg>] [-o <arg>] -p <arg> [-r <arg>] [-t <arg>] [-u
+       <arg>] [-z <arg>]
+
+This tool automatizes the experimentation phase for the AD protections on the Oblive.it tool.
+
+ -a,--JaCoCoAgent <arg>                                   Path in the file system pointing to the jar of the JaCoCo agent If not given, the internal .jar, inside the lib folder, will be used
+ -b,--Oblive <arg>                                        Path in the file system pointing to the jar of the Oblive software If not given, the internal .jar, inside the lib folder, will be used
+ -c,--JaCoCoCLI <arg>                                     Path in the file system pointing to the jar of the JaCoCo CLI If not given, the internal .jar, inside the lib folder, will be used
+ -h,--JavaHome <arg>                                      Path in the file system pointing to JAVA_HOME
+ -j,--JarToProtect <arg>                                  Path to the .jar file containing the Java code on which the experimentation will run
+ -n,--TestsRepetitionNumber <arg>                         How many times tests have to be repeated to collect execution metrics The number must be in the interval 1-1000 If not given, the default value (100) will be used
+ -o,--OutputFolder <arg>                                  Path in the file system pointing to the directory where to write output files If not given, the current working directory will be used
+ -p,--Annotation <arg>                                    The annotation, as string, that defines the AD protection to implement [one betweenantidebug time, antidebugself, native]
+ -r,--Annotator <arg>                                     Path in the file system pointing to the jar of the annotator If not given, the internal .jar, inside the lib folder, will be used
+ -t,--JarTestCases <arg>                                  Path to the .jar file containing the Java tests to run on the given jar to protect If not given, tests will be assumed to be in the jarToProtect
+ -u,--JUnitConsole <arg>                                  Path in the file system pointing to the jar of JUnit5 standalone console If not given, the internal .jar, inside the lib folder, will be used
+ -z,--NumberOfTestsOnWhichToExecuteDebuggingTasks <arg>   the number of tests on which to execute the debugging tasks. The number must be strictly positive. If there are less tests than the specified number, then a warning message will be issued If not given, the default value (10) will be used
+
+Please report issues to sberlato@fbk.eu
